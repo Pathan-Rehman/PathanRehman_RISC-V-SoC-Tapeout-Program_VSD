@@ -12,7 +12,7 @@ This program guides me through designing a complete System-on-Chip (SoC) from ba
 
 | Task | Description | Status |
 |-------|-------------|--------|
-| [Task 1](./Week0/Task-1/README.md) | Summary of **Getting started with Digital VLSI SOC Design and Planning** Video | ✅ Completed |
+| [Task 1](./Week-0/Task-1/README.md) | Summary of **Getting started with Digital VLSI SOC Design and Planning** Video | ✅ Completed |
 
 ### 🌟 Key Learnings from Week 0
 
