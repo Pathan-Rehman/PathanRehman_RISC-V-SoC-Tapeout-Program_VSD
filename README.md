@@ -34,7 +34,3 @@ I also acknowledge the invaluable support of **RISC-V International**, **India S
 This repository will continue to document my learning and progress as I advance through this exciting journey of chip design and fabrication.
 
 ---
-
-[8](https://www.youtube.com/watch?v=kzJYE8DBW8k)
-[9](https://moschip.com/blog/semiconductor/getting-started-with-risc-v-and-its-architecture/)
-[10](https://semiengineering.com/closing-the-risc-v-verification-disconnect/)
