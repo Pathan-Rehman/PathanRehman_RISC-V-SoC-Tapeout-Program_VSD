@@ -35,6 +35,3 @@ I also acknowledge the invaluable support of **RISC-V International**, **India S
 This repository will continue to document my learning and progress as I advance through this exciting journey of chip design and fabrication.
 
 ***
-[9](https://dirv.iitm.ac.in)
-[10](https://shakti.org.in/gc2025-shakti.html)
-[11](https://incoresemi.com/news/incore-unveils-soc-generator-platform-from-idea-tofpga-validation-in-minutes-demonstrates-silicon-proofof-auto-generated-soc/)
