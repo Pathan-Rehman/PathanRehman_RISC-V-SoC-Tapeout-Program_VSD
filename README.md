@@ -1,12 +1,24 @@
-***
-
+---
 # 🖥️ RISC-V Reference SoC Tapeout Program VSD
 
-Welcome to my journey through the **RISC-V SoC Tapeout Program VSD**! This repository chronicles my detailed week-by-week progress, featuring the tasks and milestones I accomplish throughout the program.  
+<div align="center">
 
+<a href="https://www.electronics-ed.com/" target="_blank" rel="noopener noreferrer">
+  <img src="https://img.shields.io/badge/Website-Electronics--ed-blue?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Website" style="vertical-align:middle;margin-right:10px;"/>
+</a>
+<a href="https://www.linkedin.com/in/p-r-a-k/" target="_blank" rel="noopener noreferrer">
+  <img src="https://img.shields.io/badge/LinkedIn-PRAK-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" style="vertical-align:middle;margin-right:10px;"/>
+</a>
+<a href="https://www.youtube.com/@electronics-ed" target="_blank" rel="noopener noreferrer">
+  <img src="https://img.shields.io/badge/YouTube-Electronics--ed-red?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube" style="vertical-align:middle;"/>
+</a>
+
+</div>
+
+Welcome to my journey through the **RISC-V SoC Tapeout Program VSD**! This repository chronicles my detailed week-by-week progress, featuring the tasks and milestones I accomplish throughout the program.  
 This program guides me through designing a complete System-on-Chip (SoC) from basic RTL all the way to GDSII layout using open-source tools. It is part of India’s largest collaborative RISC-V tapeout initiative, empowering over 3,500 participants to build silicon and actively contribute to advancing the nation’s semiconductor ecosystem.
 
-***
+---
 
 ## 📅 Week 0 — Setup & Tools
 
@@ -21,7 +33,7 @@ This program guides me through designing a complete System-on-Chip (SoC) from ba
 - Successfully set up the development environment with essential open-source electronic design automation (EDA) tools—building the foundation for RTL verification and synthesis.
 - Prepared the system for upcoming VLSI design stages involving RTL design validation, synthesis with Yosys, and waveform visualization using GTKWave in preparation for physical design steps.
 
-***
+---
 
 ## 🙏 Acknowledgments
 
@@ -29,7 +41,7 @@ I extend my sincere gratitude to [Kunal Ghosh](https://github.com/kunalg123) and
 
 I also acknowledge the invaluable support of **RISC-V International**, **India Semiconductor Mission (ISM)**, **VLSI Society of India (VSI)**, and [Efabless](https://github.com/efabless) whose collaboration has made this initiative possible.
 
-***
+---
 
 This repository will continue to document my learning and progress as I advance through this exciting journey of chip design and fabrication.
 
