@@ -35,7 +35,7 @@ Summary of "Getting started with Digital VLSI SOC Design and Planning" Video
   - Usually written in **Verilog**, but higher-level languages like **Chisel** or **BlueSpec** may also be used.
 - This is a **“soft hardware copy”** — not yet physical, just a functional model.
 - Application is run again, yielding **O2**.
-- Check: $$ O1 = O2 $$, ensuring functionality is preserved.
+- Check:  O1 = O2 , ensuring functionality is preserved.
 
 ***
 
@@ -51,7 +51,7 @@ Summary of "Getting started with Digital VLSI SOC Design and Planning" Video
     - **Analog IPs** (ADC, PLL, clock multipliers for communication between analog world and digital chip).
       - Analog IPs only need **functional RTL**, not synthesizable.
 - Application tested again → output **O3**.
-- Requirement: $$ O1 = O2 = O3 $$.
+- Requirement:  O1 = O2 = O3 .
 
 ***
 
@@ -85,7 +85,7 @@ Summary of "Getting started with Digital VLSI SOC Design and Planning" Video
 
 - Chips alone don’t run — they’re mounted on boards with memory, USB controller, clock crystals, regulators, etc.
 - The same application (from Step 1) is executed on the actual silicon board → output **O4**.
-- Validation cycle: $$ O1 = O2 = O3 = O4 $$.
+- Validation cycle:  O1 = O2 = O3 = O4 .
 - If all outputs match, the chip is functionally correct.
 
 ***
