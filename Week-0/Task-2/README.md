@@ -54,113 +54,78 @@
 
 ***
 
+Here are the installation instructions for Yosys, Icarus Verilog (iverilog), and GTKWave.
+***
+
 ## Installing Required Tools
 
-Now that Ubuntu is running, open the **Terminal** (Ctrl+Alt+T) and proceed.
+Now that Ubuntu is running, open the **Terminal** (`Ctrl+Alt+T`) and proceed with the following commands for each tool:
 
-### Step 1: General Development Tools
-These are needed for basic programming and compilation.
+### General Development Tools
+
+Install system essentials (if not already present):
 
 ```bash
 sudo apt update && sudo apt upgrade -y
 sudo apt install build-essential git make gcc g++ python3 python3-pip -y
 ```
+- `build-essential` includes GCC, G++, and Make.
+- `git` enables version control.
+- `python3`, `python3-pip` support scripting.
 
-- *build-essential* → includes GCC, G++ and Make.
-- Git and Python support scripting and code management.
+***
 
-### Step 2: Application Validation Tools (GCC)
-- Already included in `build-essential`.
-- Test with:
-  ```bash
-  gcc --version
-  ```
-- Compile a test C program:
-  ```bash
-  echo '#include <stdio.h>\nint main(){printf("Hello VLSI\\n");}' > test.c
-  gcc test.c -o test
-  ./test
-  ```
+### Yosys (Open SYnthesis Suite) Installation
 
-### Step 3: Specification Modeling (Cross-Compilers)
-For running code on simulated processors:
+<img width="867" height="592" alt="image" src="https://github.com/user-attachments/assets/30d1282a-c31e-400f-b027-216728b3490a" />
 
-- **RISC-V GCC**:
-  ```bash
-  sudo apt install gcc-riscv64-unknown-elf -y
-  riscv64-unknown-elf-gcc --version
-  ```
+```bash
+sudo apt-get update
+git clone https://github.com/YosysHQ/yosys.git
+cd yosys
+sudo apt install make
+sudo apt-get install build-essential clang bison flex \
+  libreadline-dev gawk tcl-dev libffi-dev git \
+  graphviz xdot pkg-config python3 libboost-system-dev \
+  libboost-python-dev libboost-filesystem-dev zlib1g-dev
+make config-gcc
+make
+sudo make install
+```
+- This will build and install Yosys from source. If `make` is not installed, run `sudo apt install make` first.
 
-- **ARM GCC**:
-  ```bash
-  sudo apt install gcc-arm-none-eabi -y
-  arm-none-eabi-gcc --version
-  ```
+***
 
-### Step 4: RTL and Hardware Description Languages
-Install Verilog and simulators.
+### Icarus Verilog (iverilog) and GTKWave Installation
 
-- **Icarus Verilog**:
-  ```bash
-  sudo apt install iverilog gtkwave -y
-  ```
-  Test with:
+<img width="807" height="694" alt="image" src="https://github.com/user-attachments/assets/a13201de-d67e-49e0-95bd-d0c20304d304" />
+
+
+<img width="486" height="74" alt="image" src="https://github.com/user-attachments/assets/f69426f1-d292-4cf3-90f5-d1b5c5d0742a" />
+
+
+```bash
+sudo apt-get update
+sudo apt-get install iverilog gtkwave
+sudo apt install gtkwave   # For GTKWave only
+```
+- Both iverilog and gtkwave are simulation and waveform viewing tools, respectively.
+- Test installation with:
   ```bash
   iverilog -v
   ```
-
-- **Optional Open Source Languages**:
-  - *Chisel* (Scala-based, requires Java & SBT):
-    ```bash
-    sudo apt install default-jdk scala sbt -y
-    ```
-  - *BlueSpec* is commercial, but you can explore its free variants from academic sources.
-
-### Step 5: SOC Partitioning and Functional Verification
-Simulation and peripheral IP modeling needs:
-- **Verilator** (faster than Icarus):
-  ```bash
-  sudo apt install verilator -y
-  ```
-
-### Step 6: Physical Design (EDA Toolchain)
-Open-source tools you can try for back-end workflows:
-
-- **OpenROAD + OpenLane (Floorplanning, Placement, Routing)**  
-  Installation (simplified using Docker):
-  ```bash
-  sudo apt install docker.io -y
-  git clone https://github.com/The-OpenROAD-Project/OpenLane.git
-  cd OpenLane
-  make
-  ```
-
-- **Magic VLSI (Layout Viewer/Editor)**:
-  ```bash
-  sudo apt install magic -y
-  ```
-
-- **KLayout (for GDSII viewing)**:
-  ```bash
-  sudo apt install klayout -y
-  ```
-
-### Step 7: Hardware Board Testing
-While actual board testing requires silicon, you can emulate using **QEMU**:
-```bash
-sudo apt install qemu-system -y
-```
-This lets you boot RISC-V or ARM binaries without a physical board.
 
 ***
 
 ## Final Environment Summary
 
 Your Ubuntu VM will now have:
-
 - GCC (for initial C program testing).
-- Cross-compilers (RISC-V, ARM GCC for specification modeling).
-- iverilog, verilator, gtkwave (for RTL simulation).
+- Yosys (for RTL synthesis and analysis).
+- Icarus Verilog and GTKWave (for RTL simulation and waveform viewing).
+
+These tools support key steps in the VLSI SOC design flow, from application and specification validation, to RTL simulation and synthesis, all within your virtualized, isolated Linux development environment.
+
 - Magic, KLayout, OpenLane (for physical design and layout).
 - QEMU (board emulation).
 
