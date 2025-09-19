@@ -41,6 +41,7 @@
 
 1. Download the Ubuntu ISO (LTS version recommended: [Ubuntu 24.04.3 LTS](https://ubuntu.com/download/desktop).
 
+![Alt Txt](https://github.com/Pathan-Rehman/PathanRehman_RISC-V-SoC-Tapeout-Program_VSD/blob/main/Week-0/Task-2/Images/Recording%202025-09-19%20160802.gif)
 
 2. In VirtualBox:
    - Select the VM → **Settings → Storage → Empty CD/DVD drive** → attach the ISO.
