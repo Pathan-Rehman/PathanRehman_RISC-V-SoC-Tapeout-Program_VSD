@@ -3,6 +3,7 @@
 # 🖥️ RISC-V Reference SoC Tapeout Program VSD
 
 Welcome to my journey through the **RISC-V SoC Tapeout Program VSD**! This repository chronicles my detailed week-by-week progress, featuring the tasks and milestones I accomplish throughout the program.  
+
 This program guides me through designing a complete System-on-Chip (SoC) from basic RTL all the way to GDSII layout using open-source tools. It is part of India’s largest collaborative RISC-V tapeout initiative, empowering over 3,500 participants to build silicon and actively contribute to advancing the nation’s semiconductor ecosystem.
 
 ***
