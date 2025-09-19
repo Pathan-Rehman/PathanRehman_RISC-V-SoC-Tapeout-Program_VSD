@@ -1,4 +1,4 @@
-Summary of "Getting started with Digital VLSI SOC Design and Planning" Video
+# Summary of "Getting started with Digital VLSI SOC Design and Planning" Video
 
 ### Initial Setup and Basics
 - Everyone is assumed to have basic C programming knowledge (through GCC/CCC etc.).
