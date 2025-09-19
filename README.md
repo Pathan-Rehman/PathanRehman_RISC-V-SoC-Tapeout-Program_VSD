@@ -1,5 +1,3 @@
-Here is the rewritten version of the GitHub README content, presented in a clear, engaging, and professional tone suitable for a personal repository:
-
 ***
 
 # 🖥️ RISC-V Reference SoC Tapeout Program VSD
