@@ -1,6 +1,6 @@
 ## Summary
 
-This video is a comprehensive lab walkthrough for setting up the environment required for VLSI labs and running simulations with IVerilog and GTKWave. It guides users through directory creation, cloning necessary repositories, identifying the structure of the design and test bench files, compiling and simulating Verilog code, and analyzing results with GTKWave, focusing on a multiplexer example.
+This is a comprehensive lab walkthrough for setting up the environment required for VLSI labs and running simulations with IVerilog and GTKWave. It guides users through directory creation, cloning necessary repositories, identifying the structure of the design and test bench files, compiling and simulating Verilog code, and analyzing results with GTKWave, focusing on a multiplexer example.
 
 ## Lab Environment Setup
 
