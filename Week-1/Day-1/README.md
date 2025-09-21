@@ -50,7 +50,8 @@ module inverter(
 endmodule
 ```
 
-![PLACEHOLDER: inverter.v code snippet in text editor]
+<img width="689" height="230" alt="image" src="https://github.com/user-attachments/assets/7ce3ff9b-1d66-479f-ab85-a5d4e1c2e6b4" />
+
 
 ### 3. Write the Test Bench
 
@@ -78,7 +79,8 @@ end
 endmodule
 ```
 
-![PLACEHOLDER: inverter_tb.v code in editor]
+<img width="765" height="599" alt="image" src="https://github.com/user-attachments/assets/fd2a18af-41a5-4e73-89a7-b6188941c9e2" />
+
 
 ### 4. Open Terminal in Project Directory
 
@@ -88,7 +90,8 @@ Navigate to the directory containing both `inverter.v` and `inverter_tb.v`. On L
 cd /path/to/your/project
 ```
 
-![PLACEHOLDER: Terminal showing project directory]
+<img width="855" height="330" alt="image" src="https://github.com/user-attachments/assets/7b9781ff-4c37-48fa-acdc-3d61525e94d9" />
+
 
 ### 5. Compile the Design and Test Bench
 
@@ -101,7 +104,8 @@ iverilog -o inverter inverter.v inverter_tb.v
 - `-o inverter` sets the name of the compiled output.
 - Both source files are specified.
 
-![PLACEHOLDER: Terminal showing successful iVerilog compilation]
+<img width="850" height="351" alt="image" src="https://github.com/user-attachments/assets/6358658a-1c1b-4c57-bb2e-88c138d73cc6" />
+
 
 ### 6. Run the Simulation
 
@@ -113,7 +117,8 @@ vvp inverter
 
 - This generates the VCD file (`inverter.vcd`) as specified in the test bench.
 
-![PLACEHOLDER: Terminal output from vvp simulation]
+<img width="849" height="413" alt="image" src="https://github.com/user-attachments/assets/f5061154-6ed0-4c67-bc0e-1e5d1fb6501f" />
+
 
 ### 7. View the Waveforms
 
@@ -125,7 +130,8 @@ gtkwave inverter.vcd
 
 - Use GTKWave’s GUI to inspect signal transitions and verify they match expected results.
 
-![PLACEHOLDER: GTKWave displaying inverter.vcd waveform]
+<img width="869" height="722" alt="image" src="https://github.com/user-attachments/assets/578859fb-1a14-496b-9ed5-2582074408ff" />
+
 
 ## Additional Notes
 
