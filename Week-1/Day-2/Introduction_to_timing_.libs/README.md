@@ -2,7 +2,6 @@
 
 This documentation provides an in-depth theoretical overview of the structure and contents of a `.lib` file within open-source hardware cell libraries, such as the Sky130 library. It introduces key terminology, explains the fundamental rationale for library characterization, and outlines how cell variants are organized and described to support robust hardware design across varying operating conditions.
 
-![PLACEHOLDER: diagram/slide/concept-visual]
 
 ## Core Concepts
 
@@ -12,8 +11,10 @@ A `.lib` file is a digital library containing a set of standard cells used in ha
 
 - The library name encodes critical attributes: process type, voltage, temperature, and technology (e.g., "TT" for typical, "025C" for 25°C, "1V8" for 1.8 volts).
 - The library is vital for synthesizing and placing digital designs using tools that reference these cell descriptions for accurate modeling.
+  
 
-![PLACEHOLDER: diagram/slide/concept-visual]
+<img width="385" height="696" alt="image" src="https://github.com/user-attachments/assets/a3cb4496-7cee-4896-b103-028f0a88ff4d" />
+
 
 ### PVT (Process, Voltage, Temperature) Corners
 
@@ -27,7 +28,6 @@ Designs must operate reliably over all reasonable permutations of these paramete
 
 - Example: A CD player sold in diverse climates (cold Switzerland, hot Dubai, variable India) must function consistently despite ambient temperature differences.
 
-![PLACEHOLDER: diagram/slide/concept-visual]
 
 ### Cell Descriptions and Variants
 
@@ -45,7 +45,9 @@ Cells in a `.lib` file are declared using the `cell` keyword. Each cell is descr
 
 The cells are organized such that designers can select the optimal variant for a given constraint in speed, power, or area.
 
-![PLACEHOLDER: diagram/slide/concept-visual]
+
+<img width="264" height="320" alt="image" src="https://github.com/user-attachments/assets/041d448c-272b-4fe6-bb89-6972676e8bf4" />
+
 
 ### Cell Functionality and Input Combinations
 
@@ -54,8 +56,10 @@ Each logic cell accepts a defined set of inputs. The library enumerates all poss
 - For a cell with $n$ binary inputs, there are $2^n$ possible input states.
 - Example: An AND gate with two inputs ($n=2$) has $2^2=4$ possible states. 
 - For each state, the library specifies the corresponding delay, power, and behavior, ensuring accurate modeling for timing analysis and power estimation.
+  
 
-![PLACEHOLDER: diagram/slide/concept-visual]
+<img width="827" height="608" alt="image" src="https://github.com/user-attachments/assets/09fc692f-552e-495a-98cf-ce3f355ad782" />
+
 
 ### Library Data Units and Parameters
 
@@ -70,7 +74,9 @@ All behavioral values within a `.lib` are annotated with units and parameters:
 
 The file details operating conditions (PVT) and defines function, leakage power, pin-level capacitance, transition timing, and delay for each cell and each input scenario.
 
-![PLACEHOLDER: diagram/slide/concept-visual]
+
+<img width="1395" height="520" alt="image" src="https://github.com/user-attachments/assets/044997c8-1294-41f3-865b-712f22177bd7" />
+
 
 ## Key Points
 
@@ -79,5 +85,3 @@ The file details operating conditions (PVT) and defines function, leakage power,
 - Variations in cell structure (e.g., wider/narrower transistors) allow designers to balance tradeoffs between speed, area, and power.
 - Every possible input combination for each cell is characterized to ensure accuracy during logic simulation and timing analysis.
 - Standard cell libraries are organized to facilitate the selection of optimal gate variants for a range of design requirements.
-
-![PLACEHOLDER: diagram/slide/concept-visual]
